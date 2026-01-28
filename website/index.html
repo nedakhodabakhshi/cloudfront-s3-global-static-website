@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudFront + S3 Global Static Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌍 CloudFront Global Static Website</h1>
+        <p>A hands-on AWS SOA-C03 project</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Project Overview</h2>
+            <p>
+                This static website is hosted on <strong>Amazon S3</strong> and
+                delivered globally using <strong>Amazon CloudFront</strong>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Private S3 bucket (no public access)</li>
+                <li>CloudFront with Origin Access Control (OAC)</li>
+                <li>Custom Cache Policy (Headers, Cookies, Query Strings)</li>
+                <li>Cache Invalidation</li>
+                <li>Geo Restriction</li>
+                <li>CloudFront Access Logs</li>
+            </ul>
+        </section>
+
+        <section class="card highlight">
+            <h2>Deployment Info</h2>
+            <p><strong>Version:</strong> v2</p>
+            <p><strong>Last Updated:</strong> <span id="date"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 | AWS CloudFront Demo Project</p>
+    </footer>
+
+    <script>
+        document.getElementById("date").innerText = new Date().toDateString();
+    </script>
+
+</body>
+</html>
