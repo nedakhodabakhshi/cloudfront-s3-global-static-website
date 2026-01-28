@@ -104,7 +104,5 @@ Some CloudFront features were not available due to the Free plan:
 - Add CI/CD pipeline
 
 ---
+CloudFront distributions cannot be deleted immediately after canceling a pricing plan. AWS enforces a billing-cycle boundary even for the Free plan.
 
-## 🌍 Live Demo
-
-https://d3h98fhtxdb28.cloudfront.net
